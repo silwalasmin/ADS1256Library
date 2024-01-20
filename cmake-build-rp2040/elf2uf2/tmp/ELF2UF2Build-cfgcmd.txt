@@ -1,0 +1,1 @@
+cmd='/home/asmin/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake;-DCMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/gmake;-GUnix Makefiles;-S;<SOURCE_DIR><SOURCE_SUBDIR>;-B;<BINARY_DIR>'

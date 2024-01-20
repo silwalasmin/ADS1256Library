@@ -1,0 +1,2 @@
+/usr/bin/arm-none-eabi-ar qc libADS1256.a CMakeFiles/ADS1256.dir/include/ADS1256.cpp.obj
+/usr/bin/arm-none-eabi-ranlib libADS1256.a
