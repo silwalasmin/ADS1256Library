@@ -489,11 +489,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
+					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
+					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "CXX",
@@ -881,11 +881,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
+					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
+					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "C",
@@ -1328,11 +1328,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
+					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/asmin/CLionProjects/RP2040/PressureSensor/ads1256_library/inc"
+					"path" : "/opt/pico-sdk/src/rp2_common/hardware_spi/include"
 				}
 			],
 			"language" : "ASM",

@@ -5,11 +5,24 @@
 
 
 #include "ADS1256.h"
+
+void blinky(){
+    gpio_init(25);
+    gpio_set_dir(25, GPIO_OUT);
+    while (1) {
+        gpio_put(25, 0);
+        sleep_ms(250);
+        gpio_put(25, 1);
+        sleep_ms(1000);
+    }
+}
+
 ADS1256::ADS1256(spi_inst *spiNum, float clockSpeedMhz, float vRef, bool userResetPin,uint SCK,uint MISO,uint MOSI,uint pinCS,uint pinDRDY, uint pinRST) {
     //set DRDY pin as input
     this->pinDRDY=pinDRDY;
+
     this->pinCS=pinCS;
-    this->pinRST;
+    this->pinRST=pinRST;
     gpio_init(this->pinDRDY);
     gpio_set_dir(this->pinDRDY,GPIO_IN);
 
@@ -19,8 +32,8 @@ ADS1256::ADS1256(spi_inst *spiNum, float clockSpeedMhz, float vRef, bool userRes
 
     //pull RESETPIN HIGH
     gpio_init(this->pinRST);
+    gpio_set_dir(this->pinRST,GPIO_OUT);
     gpio_put(this->pinRST, 1);
-
     //Reference voltage
     _VREF=vRef;
 
@@ -32,6 +45,8 @@ ADS1256::ADS1256(spi_inst *spiNum, float clockSpeedMhz, float vRef, bool userRes
     gpio_set_function(MISO, GPIO_FUNC_SPI);
     gpio_set_function(SCK, GPIO_FUNC_SPI);
     gpio_set_function(MOSI, GPIO_FUNC_SPI);
+
+
 
 }
 
